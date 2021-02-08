@@ -8,7 +8,10 @@
 </div>
 
 <% @posts.each do |post| %>
+
+<%# 13~20行目がクリックされた時にイベントを発火させたい %>
   <div class="post" data-id=<%= post.id %> data-check=<%= post.checked %>>
+  
     <div class="post-date">
       投稿日時：<%= post.created_at %>
     </div>
